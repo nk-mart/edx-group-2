@@ -1,59 +1,26 @@
-# <Your-Project-Title>
+# Quote Collector
 
 ## Description
 
-We have created a mobile-first single page web application that allows users to discover and be inspired by facts, and store them to a selection ... etc etc 
-
-- Our motivation was to ... 
-- We solve the problem of...
-- We did it this way because...
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
 ## Installation
 
-This web applicaion is accessible via any browser and no installation is necessary
+No installation necessary. Web application, can be accessed via the URL on your browser as needed.
 
 ## Usage
 
-user journey/ how to use... 
-
-Upon loading this application in the browser, the user will see...
-
-
-
-A screenshot of the working application:
-
-![alt text](assets/images/screenshot.png)
-
-The link to the deployed application:
-
-
-
 ## Credits
 
-The collaborators for this project were: 
-
-Lawrence 
+Lawrence
 Christopher
 Angel
 Leona
 
-For this application we used
+To create this app we have used:
 
--
--
--
--
--
--Google fonts for the fonts:
+- the 'Quotable' API by Luke Peavey
+https://github.com/lukePeavey/quotable.git
+
+- Google fonts for the fonts: 
 
 https://fonts.google.com/
 
@@ -72,9 +39,3 @@ https://opensource.org/license/mit/
 This project will use the open source contributer covenant. Please see below: 
 
 https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
-
-
-## Tests
-
-Tests written, examples. (If time)
-
