@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './QuoteAPI.css'
 
 function QuoteAPI() {
   const [quote, setQuote] = useState('');
