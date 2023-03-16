@@ -1,49 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import QuoteAPI from "./components/QuoteAPI";
-
+import React from "react";
+import CollectionPage from "./components/CollectionPage.js";
+import Home from "./components/Home.js";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import "./App.css";
 
 
 function App() {
-
-  const [quote, setQuote] = useState('');
-
-  useEffect(() => {
-    
-
-    fetchQuote();
-  }, []);
-  
-  async function fetchQuote(event) {
-    event.preventDefault();
-    const response = await fetch('https://api.quotable.io/random');
-    const data = await response.json();
-     setQuote(data.content);
-    
-    
-  }
-
-  function storeQuote(event){
-    event.preventDefault();
-    localStorage.setItem(quote,JSON.stringify(quote));
-  }
-
   return (
-    <div className="App">
-      <div className="header">Quote Collector</div> 
-      
-        <QuoteAPI quote={quote}></QuoteAPI>
-
-      <div className="topRightButtons">
-          <a href="" className="saveIcon" onClick={storeQuote}>Save</a>
-          <a href="" className="collectionIcon">collection</a>
-      </div>
-      <div className="middleSideButtons">
-          <a href="" className="rightIcon" onClick={fetchQuote}>Next Quote</a>
-      </div>
+    <Router>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/collectionpage" element={<CollectionPage />} />
+      </Routes>
     </div>
+    </Router>
   );
 }
-
 
 export default App;
