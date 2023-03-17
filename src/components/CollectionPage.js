@@ -13,6 +13,7 @@ function CollectionPage(){
     return (
         <div>
             hello
+            {savedQuotes.map((quote) => (<div> {quote} </div>))}
         </div>
      );
 
