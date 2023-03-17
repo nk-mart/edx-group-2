@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import QuoteAPI from "./QuoteAPI.js";
+import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,6 +31,11 @@ function App() {
   }
 
   return (
+
+    
+    <>
+
+   
     <div className="App">
       <div className="header">Quote Collector</div> 
       
@@ -42,6 +49,7 @@ function App() {
           <a href="" className="rightIcon" onClick={fetchQuote}>Next Quote</a>
       </div>
     </div>
+    </>
   );
 }
 
