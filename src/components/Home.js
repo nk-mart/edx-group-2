@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import QuoteAPI from "./components/QuoteAPI";
+import {Link} from 'react-router-dom'
+
 
 
 
@@ -36,7 +38,10 @@ function Home() {
   
         <div className="topRightButtons">
             <a href="" className="saveIcon" onClick={storeQuote}>Save</a>
-            <a href="" className="collectionIcon">collection</a>
+            <Link to="/collection" className="collectionIcon">
+          collection
+        </Link>
+
         </div>
         <div className="middleSideButtons">
             <a href="" className="rightIcon" onClick={fetchQuote}>Next Quote</a>
