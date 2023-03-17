@@ -1,6 +1,6 @@
 function CollectionPage(){
     return (
-        <div>
+        <div className="text-3xl">
             hello
         </div>
     )};
