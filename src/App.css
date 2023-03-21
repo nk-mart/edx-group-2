@@ -42,26 +42,33 @@
 }
 .saveIcon,
 .collectionIcon {
-  background-color: turquoise;
-  height: 50px;
-  width: 50px;
+  background-color: rgb(137, 8, 133);
+  text-align: center;
+  height: 80px;
+  width: 230px;
   border-radius: 100px;
-  margin-left: 30px;
+  margin-left: 50px;
   box-shadow: var(--box-shadow);
 }
 .middleSideButtons {
   z-index: 2;
   position: absolute;
-  bottom: 40%;
+  bottom: 30%;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.rightIcon,
+.saveIcon{
+  text-align: center;
+}
+
+
+
 .leftIcon {
   background-color: purple;
-  height: 50px;
-  width: 50px;
+  text-align: center;
+  height: 100px;
+  width: 300px;
   box-shadow: var(--box-shadow);
 }
 

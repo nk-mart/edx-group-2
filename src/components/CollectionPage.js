@@ -12,7 +12,7 @@ function CollectionPage(){
     
     return (
         <div>
-            hello
+            Hello QuoteNerdy
             {savedQuotes.map((quote) => (<div> {quote} </div>))}
         </div>
      );

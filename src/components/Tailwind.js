@@ -1,5 +1,5 @@
 import React from "react";
-import "./Tailwind.js";
+import Tailwind from "./components/tailwind.js";
 
 const Tailwind = () => (
     <div className= "App">

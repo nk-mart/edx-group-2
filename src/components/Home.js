@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 
 
 
+
 function Home() {
 
     const [quote, setQuote] = useState('');
@@ -31,19 +32,20 @@ function Home() {
   
     return (
       <div className="App">
-        <div className="header">QuoteNerdy</div> 
+        <div className="header text-7xl text-orange-700 ">QuoteNerdy</div> 
+        <h1 ClassName="header">feeling lucky....</h1>
         
           <QuoteAPI quote={quote}></QuoteAPI>
   
         <div className="topRightButtons">
-            <a href="" className="saveIcon" onClick={storeQuote}>Save</a>
-            <Link to="/collectionpage" className="collectionIcon">
+            <a href="" className="saveIcon  text-6xl" onClick={storeQuote}>Save</a>
+            <Link to="/collectionpage" className="collectionIcon text-5xl">
           collection
         </Link>
 
         </div>
         <div className="middleSideButtons">
-            <a href="" className="rightIcon" onClick={fetchQuote}>Next Quote</a>
+            <a href="" className="leftIcon text-5xl" onClick={fetchQuote}>Next Quote</a>
         </div>
       </div>
     );
