@@ -10,3 +10,4 @@ function QuoteAPI({quote}) {
 }
 
 export default QuoteAPI;
+
