@@ -32,21 +32,11 @@ function Home() {
       event.preventDefault();
       const quoteObject={
         quote, 
-        color: randomColor,
+        color: backgroundColor,
         
       }
-      let quotes = localStorage.getItem("quotesArray")
-      if(!quotes){
-        quotes=[quoteObject]
-        console.log(quotes)
-      }
-      else{
-        let quoteOld = JSON.parse(JSON.stringify(quotes))
-        console.log(typeof quoteOld)
-        quoteOld.push(quoteObject)
       
-    }
-      localStorage.setItem("quotesArray", JSON.stringify(quotes))
+      localStorage.setItem(quote, JSON.stringify(quoteObject))
     }
   
     return (
