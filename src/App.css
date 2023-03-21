@@ -11,56 +11,127 @@
     
   
 }
-.quotePic {
-  background-color: pink;
-  height: 80vh;
-  width: 100vw;
-  overflow-x: hidden;
-  margin-top: 15px;
+.header{
+  overflow:hidden;
+  color: rgba(0, 0, 0, 0.444);
+  text-transform:uppercase;
+  font-weight: 900;
+  background-color: var(--color3);
   box-shadow: var(--box-shadow);
-  padding: 50px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 50px;
+  text-align: center;
+
+  /* font-family: 'Anton', sans-serif; */
+/* font-family: 'Antonio', sans-serif; */
+/* font-family: 'Arapey', serif; */
+/* font-family: 'Atma', cursive; */
+/* font-family: 'Bangers', cursive; */
+/* font-family: 'Boogaloo', cursive; */
+/* font-family: 'Cormorant', serif; */
+/* font-family: 'Cormorant Infant', serif; */
+/* font-family: 'Cormorant SC', serif; */
+/* font-family: 'Cormorant Upright', serif; */
+/* font-family: 'Fraunces', serif; */
+/* font-family: 'Julius Sans One', sans-serif; */
+/* font-family: 'Katibeh', cursive; */
+/* font-family: 'League Gothic', sans-serif; */
+/* font-family: 'Playball', cursive; */
+/* font-family: 'PT Serif Caption', serif; */
+/* font-family: 'Sansita', sans-serif; */
+/* font-family: 'Shantell Sans', cursive; */
+/* font-family: 'Sigmar One', cursive; */
+/* font-family: 'Sorts Mill Goudy', serif; */
+/* font-family: 'Ultra', serif; */
+/* font-family: simonetta; */
 }
 
-.header {
-  background-color: var(--color2);
+
+
+.quotePic {
+  position:absolute;
+  height: 80vh;
+  width:100%;
+  border-radius: 250px;
+  overflow: hidden;
+  margin-top: 15px;
+  box-shadow: var(--box-shadow);
+  background-size: cover;
+  background-image: url('/public/2.jpeg');
+  background-repeat: no-repeat;
+  z-index: 1; 
+}
+.colourOverlay{
+  position:absolute;
+  height: 80vh;
+  width:100%;
+  border-radius: 250px;
+  overflow: hidden;
+  z-index: 2; 
+  opacity: 0.5; 
+}
+.quoteText{
+  position:absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
-  width: 100vw;
-  box-shadow: var(--box-shadow);
+  height: 100%;
+  z-index:5;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: simonetta;
+  padding-left: 22%;
+  padding-right:18%;
+  color: black;
+  transform: rotate(-1deg);
 }
 
-.topRightButtons {
-  position: absolute;
-  top: 20vh;
-  right: 2vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 2;
+.fa1, .fa2 {
+  position:absolute;
+  color: black;
+  font-size: 80px;
+  z-index: 6;
 }
-.saveIcon,
-.collectionIcon {
-  background-color: turquoise;
+
+.fa1 {
+  left: 3vw;
+  top: 20vh;
+  transform: rotate(5deg);
+}
+
+.fa2 {
+  bottom: 1vh;
+  right: 3vw;
+  transform: rotate(5deg);
+}
+
+
+.topRightButtons{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index:2;
+}
+.saveIcon, .collectionIcon{
+  background-color: var(--color4);
   height: 50px;
   width: 50px;
   border-radius: 100px;
   margin-left: 30px;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow)
 }
-.middleSideButtons {
-  z-index: 2;
-  position: absolute;
-  bottom: 40%;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+
+
+.nextBtn{
+  position:absolute;
+  top: 55vh;
+  right: 3vw;
+  color: black;
+  padding:0px;
+  font-size: 100px; 
+  z-index: 20000000;
 }
-.rightIcon,
-.leftIcon {
-  background-color: purple;
-  height: 50px;
-  width: 50px;
-  box-shadow: var(--box-shadow);
-}
+

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
+import Header from './Header.js';
 import QuoteAPI from "./QuoteAPI";
 import {Link} from 'react-router-dom'
+import randomColor from 'randomcolor';
 
 
 
@@ -9,6 +11,7 @@ import {Link} from 'react-router-dom'
 function Home() {
 
     const [quote, setQuote] = useState('');
+    const [backgroundColor, setBackgroundColor] = useState(randomColor());
   
     useEffect(() => {
       
@@ -21,34 +24,46 @@ function Home() {
       const response = await fetch('https://api.quotable.io/random');
       const data = await response.json();
        setQuote(data.content);
-      
+       setBackgroundColor(randomColor());
       
     }
   
     function storeQuote(event){
       event.preventDefault();
-      localStorage.setItem(quote,JSON.stringify(quote));
+      const quoteObject={
+        quote, 
+        color: backgroundColor,
+        
+      }
+      
+      localStorage.setItem(quote, JSON.stringify(quoteObject))
     }
   
     return (
       <div className="App">
-        <div className="header">Quote Collector</div> 
-        
-          <QuoteAPI quote={quote}></QuoteAPI>
-  
-        <div className="topRightButtons">
-            <a href="" className="saveIcon" onClick={storeQuote}>Save</a>
-            <Link to="/collectionpage" className="collectionIcon">
-          collection
-        </Link>
 
-        </div>
-        <div className="middleSideButtons">
-            <a href="" className="rightIcon" onClick={fetchQuote}>Next Quote</a>
-        </div>
+        <Header></Header>
+        
+        <i class="fa1 fa fa-quote-left" aria-hidden="true"></i>
+
+        <div className="quotePic" >
+        <div className="colourOverlay" style={{ backgroundColor }}></div>
+
+            <QuoteAPI quote={quote}></QuoteAPI>
       </div>
-    );
-  }
-  
-  
-  export default Home;
+
+      <i class="fa2 fa fa-quote-right" aria-hidden="true"></i>
+
+
+        <div className="topRightButtons">
+          <button className="saveIcon" onClick={storeQuote}>Save</button>
+          <Link to="/collectionpage" className="collectionIcon">collection</Link>
+        </div>
+
+        <div onClick={fetchQuote}><i className="nextBtn fa fa-chevron-right" aria-hidden="true"></i></div>
+
+    </div>
+  );
+}
+
+export default Home;
