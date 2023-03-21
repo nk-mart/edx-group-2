@@ -4,12 +4,10 @@ import Home from "./components/Home.js";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css";
 import "./index.css";
-import Navbar from "./components/Navbar.js"
 
 
 function App() {
-  return ( <Navbar>
-  
+  return (
     <Router>
     <div className = "QuoteNerdy">
   
@@ -19,8 +17,6 @@ function App() {
       </Routes>
     </div>
     </Router>
-    </Navbar>
-  
   );
 }
 
