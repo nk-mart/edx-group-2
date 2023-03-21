@@ -1,9 +1,9 @@
-import './QuoteAPI.css'
+import React from 'react';
 
 function QuoteAPI({quote}) {
   
   return (
-    <div>
+    <div className="quoteText">
       <p>{quote}</p>
     </div>
   );

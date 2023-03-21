@@ -1,5 +1,5 @@
 import React from "react";
-import CollectionPage from "./components/CollectionPage.js";
+import CollectionPage from "./components/CollectionPage/CollectionPage.js";
 import Home from "./components/Home.js";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css";
