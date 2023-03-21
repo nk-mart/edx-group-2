@@ -16,8 +16,8 @@ function CollectionPage(){
       }
     
     return (
-        <div className="Grid">
-            hello
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-1">
+            
             {savedQuotes.map((quote) => generatingQuote(quote))}
         </div>
      );
