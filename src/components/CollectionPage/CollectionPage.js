@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './CollectionPage.css';
 
 function CollectionPage(){
 
@@ -12,13 +13,19 @@ function CollectionPage(){
 
       function generatingQuote(quote){
         const quoteObject = JSON.parse(quote)
-        return (<div> {quoteObject.quote} {quoteObject.color}</div>)
+        return (<div> {quoteObject.quote} </div>)
       }
     
     return (
-        <div className="Grid">
-            hello
-            {savedQuotes.map((quote) => generatingQuote(quote))}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-1">
+          
+
+          
+ {/* <div className="colourOverlay" style={{ backgroundColor }}></div> */}
+ {savedQuotes.map((quote) => generatingQuote(quote))}
+
+          
+       
         </div>
      );
   }
