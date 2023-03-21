@@ -35,15 +35,18 @@ function Home() {
         color: randomColor,
         
       }
-      let quotes = localStorage.getItem("quotes")
+      let quotes = localStorage.getItem("quotesArray")
       if(!quotes){
         quotes=[quoteObject]
+        console.log(quotes)
       }
-      else(
-        quotes=JSON.parse(quotes).push(quoteObject)
+      else{
+        let quoteOld = JSON.parse(JSON.stringify(quotes))
+        console.log(typeof quoteOld)
+        quoteOld.push(quoteObject)
       
-      )
-      localStorage.setItem("quotes", JSON.stringify(quotes))
+    }
+      localStorage.setItem("quotesArray", JSON.stringify(quotes))
     }
   
     return (
