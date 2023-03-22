@@ -16,7 +16,6 @@ Angel
 Leona
 
 To create this app we have used:
-
 - the 'Quotable' API by Luke Peavey
 https://github.com/lukePeavey/quotable.git
 

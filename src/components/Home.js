@@ -12,10 +12,13 @@ function Home() {
 
     const [quote, setQuote] = useState('');
     const [backgroundColor, setBackgroundColor] = useState(randomColor());
+
+    const [collection, setCollection] = useState([]);
   
     useEffect(() => {
-      
-  
+
+      const quotes = JSON.parse(localStorage.getItem("collection")) || []
+      setCollection(quotes);
       fetchQuote();
     }, []);
     
@@ -33,10 +36,13 @@ function Home() {
       const quoteObject={
         quote, 
         color: backgroundColor,
-        
       }
+
+      setCollection([...collection, quoteObject])
+
+      console.log(collection)
       
-      localStorage.setItem(quote, JSON.stringify(quoteObject))
+      localStorage.setItem("collection", JSON.stringify(collection))
     }
   
     return (
