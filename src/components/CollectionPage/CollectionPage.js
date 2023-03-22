@@ -6,14 +6,25 @@ function CollectionPage(){
 
     const [savedQuotes, setSavedQuotes] = useState([]);
     
-      useEffect(() => {
-        const quotes = Object.values(localStorage);
-        setSavedQuotes(JSON.parse(JSON.stringify(quotes)));
-      }, []);
+    useEffect(() => {
+      const quotes = JSON.parse(localStorage.getItem('quotes')) || [];
+      setSavedQuotes(quotes);
+      console.log(quotes)
+    }, []);
+  
 
-      function generatingQuote(quote){
-        const quoteObject = JSON.parse(quote)
-        return (<div className="rounded-lg h-32 transition ease-in-out delay-150 border-4 border-indigo-300/50 hover:scale-110 hover:text-white hover:bg-indigo-500 duration-300 overflow-ellipsis overflow-hidden " quote-key={quoteObject.quote} style={{backgroundColor: `${quoteObject.color}`}} ><FontAwesomeIcon icon="fa-thin fa-face-smile" />{quoteObject.quote} </div>)
+    function generatingQuote(quote){
+      let quoteObject = quote;
+      if (typeof quote === 'string') {
+        quoteObject = JSON.parse(quote);
+      }
+      const backgroundColor = quoteObject.color;
+      return (
+        <div className=
+          "rounded-lg h-32 transition ease-in-out delay-150 border-4 border-indigo-300/50 hover:scale-110 hover:text-white hover:bg-indigo-500 duration-300 overflow-ellipsis overflow-hidden " 
+          quote-key={quoteObject.quote} 
+          style={{ backgroundColor }}>
+            <FontAwesomeIcon icon="fa-thin fa-face-smile" />{quoteObject.quote} </div>)
       }
     
     return (

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import Header from './Header.js';
 import QuoteAPI from "./QuoteAPI";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import Button from "./Button.js";
 import randomColor from 'randomcolor';
 
 
@@ -19,8 +20,7 @@ function Home() {
       fetchQuote();
     }, []);
     
-    async function fetchQuote(event) {
-      event.preventDefault();
+    async function fetchQuote() {
       const response = await fetch('https://api.quotable.io/random');
       const data = await response.json();
        setQuote(data.content);
@@ -28,15 +28,19 @@ function Home() {
       
     }
   
-    function storeQuote(event){
-      event.preventDefault();
+    function storeQuote(){
+   
       const quoteObject={
         quote, 
         color: backgroundColor,
         
       }
       
-      localStorage.setItem(quote, JSON.stringify(quoteObject))
+      // localStorage.setItem(quote, JSON.stringify(quoteObject)) 
+        const storedQuotes = JSON.parse(localStorage.getItem('quotes')) || [];
+        storedQuotes.push(quoteObject);
+        localStorage.setItem('quotes', JSON.stringify(storedQuotes));
+
     }
   
     return (
@@ -56,7 +60,7 @@ function Home() {
 
 
         <div className="topRightButtons">
-          <button className="saveIcon" onClick={storeQuote}>Save</button>
+          <Button functionToDo={storeQuote} content="Save" style=""/>
           <Link to="/collectionpage" className="collectionIcon">collection</Link>
         </div>
 
