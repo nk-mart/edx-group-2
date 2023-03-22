@@ -56,7 +56,7 @@ function Home() {
 
 
         <div className="topRightButtons">
-          <button className="saveIcon" onClick={storeQuote}>Save</button>
+          <Button functionToDo={storeQuote} content="Save" />
           <Link to="/collectionpage" className="collectionIcon">collection</Link>
         </div>
 
