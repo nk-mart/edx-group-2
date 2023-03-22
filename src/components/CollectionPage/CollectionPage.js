@@ -13,7 +13,7 @@ function CollectionPage(){
 
       function generatingQuote(quote){
         const quoteObject = JSON.parse(quote)
-        return (<div className="rounded-lg h-32 transition ease-in-out delay-150 border-4 border-indigo-300/50 hover:scale-110 hover:text-white hover:bg-indigo-500 duration-300 overflow-ellipsis overflow-hidden " quote-key={quoteObject.quote} style={{backgroundColor: `${quoteObject.color}`}}><FontAwesomeIcon icon="fa-thin fa-face-smile" />{quoteObject.quote} </div>)
+        return (<div className="rounded-lg h-32 transition ease-in-out delay-150 border-4 border-indigo-300/50 hover:scale-110 hover:text-white hover:bg-indigo-500 duration-300 overflow-ellipsis overflow-hidden " quote-key={quoteObject.quote} style={{backgroundColor: `${quoteObject.color}`}} ><FontAwesomeIcon icon="fa-thin fa-face-smile" />{quoteObject.quote} </div>)
       }
     
     return (
