@@ -3,6 +3,7 @@ import '../App.css';
 import Header from './Header.js';
 import QuoteAPI from "./QuoteAPI";
 import {Link} from 'react-router-dom'
+import Button from "./Button.js"
 import randomColor from 'randomcolor';
 
 
@@ -56,7 +57,7 @@ function Home() {
 
 
         <div className="topRightButtons">
-          <button className="saveIcon" onClick={storeQuote}>Save</button>
+          <Button functionToDo={storeQuote} content="Save" />
           <Link to="/collectionpage" className="collectionIcon">collection</Link>
         </div>
 
