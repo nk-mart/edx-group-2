@@ -8,6 +8,8 @@ import Button from "./Button.js";
 import "./Button.css";
 import randomColor from 'randomcolor';
 
+import Navbar from './Navbar/Navbar.js';
+import Footer from './Footer/Footer';
 
 
 
@@ -67,7 +69,7 @@ function Home() {
         </div>
 
         <div onClick={fetchQuote}><i className="nextBtn fa fa-chevron-right" aria-hidden="true"></i></div>
-
+        <Footer />
     </div>
   );
 }
