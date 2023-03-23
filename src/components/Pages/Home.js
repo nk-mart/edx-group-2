@@ -1,15 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-import Header from './Header.js';
-import QuoteAPI from "./QuoteAPI";
-import {Link} from 'react-router-dom';
-import Button from "./Button.js";
-import "./Button.css";
+import Header from '../Header.js';
+import QuoteAPI from '../QuoteAPI/QuoteAPI.js';
+import Button from "../Button/Button.js";
+import "../Button/Button.css";
 import randomColor from 'randomcolor';
-
-import Navbar from './Navbar/Navbar.js';
-import Footer from './Footer/Footer';
+import Navbar from '../Navbar/Navbar.js';
+import Footer from '../Footer/Footer';
 
 
 
@@ -71,7 +69,7 @@ function Home() {
         </div>
 
         <div onClick={fetchQuote}><i className="nextBtn fa fa-chevron-right" aria-hidden="true"></i></div>
-        <Footer />
+        <div className="homeFooter"><Footer /></div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import CollectionPage from "./components/CollectionPage/CollectionPage.js";
-import Home from "./components/Home.js";
+import CollectionPage from "./components/Pages/CollectionPage/CollectionPage";
+import Home from "./components/Pages/Home";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css";
 

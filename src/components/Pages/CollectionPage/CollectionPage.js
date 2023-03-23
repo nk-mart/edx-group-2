@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './CollectionPage.css';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
-import Button from '../Button.js';
-import "../Button.css"
+import Navbar from '../../Navbar/Navbar.js';
+import Footer from '../../Footer/Footer.js';
+import Button from '../../Button/Button.js';
+import '../../Button/Button.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -53,6 +53,7 @@ function CollectionPage(){
         </div>
         <ToastContainer />
       </div>
+      <div className="collectionFooter"><Footer></Footer></div>
       </>
      );
 }
