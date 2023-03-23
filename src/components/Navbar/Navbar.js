@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <>
-        <nav className="bg-gray-600 justify-center">
+        <nav className="Navbar bg-gray-600 justify-center">
             <ul className="flex flex-row justify-center ">
             <li className="p-4 hover:text-white">
             <Link to="/">Home</Link>
