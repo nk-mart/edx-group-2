@@ -13,6 +13,7 @@ import Footer from './Footer/Footer';
 
 
 
+
 function Home() {
 
     const [quote, setQuote] = useState('');
@@ -51,6 +52,7 @@ function Home() {
       <div className="App">
 
         <Header></Header>
+        <Navbar></Navbar>  
         
         <i class="fa1 fa fa-quote-left" aria-hidden="true"></i>
 
