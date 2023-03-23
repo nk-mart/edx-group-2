@@ -53,6 +53,7 @@ function CollectionPage(){
         </div>
         <ToastContainer />
       </div>
+      <Footer></Footer>
       </>
      );
 }
