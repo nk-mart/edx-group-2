@@ -5,6 +5,7 @@ import QuoteAPI from "./QuoteAPI";
 import {Link} from 'react-router-dom';
 import Button from "./Button.js";
 import randomColor from 'randomcolor';
+import Navbar from './Navbar/Navbar';
 
 
 
@@ -45,7 +46,7 @@ function Home() {
   
     return (
       <div className="App">
-
+        <Navbar></Navbar>
         <Header></Header>
         
         <i class="fa1 fa fa-quote-left" aria-hidden="true"></i>

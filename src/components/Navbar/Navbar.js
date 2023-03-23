@@ -18,7 +18,7 @@ function Navbar (props) {
             
             <ul className="flex flex-row justify-center ">
                 <li className="p-4 hover:text-white">Home</li>
-                <li className="p-4 hover:text -white">Collection</li>
+                <li className="p-4 hover:text-white">Collection</li>
             </ul>
             
                
