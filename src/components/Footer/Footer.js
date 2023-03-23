@@ -4,7 +4,7 @@ export default function Footer(){
     const year = new Date().getFullYear();
     return(
         <div>
-            <footer className="footer">{`Copyright © Quoute collector ${year}`}</footer>
+            <footer className="footer">{`Copyright © Quote collector ${year}`}</footer>
         </div>
     )
 

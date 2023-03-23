@@ -67,7 +67,7 @@ function Home() {
 
         <div className="topRightButtons">
           <Button functionToDo={storeQuote} content="Save" className="saveButton"/>
-          <Link to="/collectionpage" className="collectionIcon">collection</Link>
+
         </div>
 
         <div onClick={fetchQuote}><i className="nextBtn fa fa-chevron-right" aria-hidden="true"></i></div>
