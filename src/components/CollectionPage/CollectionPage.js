@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './CollectionPage.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClipboard } from '@fortawesome/free-solid-svg-icons';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
@@ -39,7 +37,7 @@ function CollectionPage() {
             className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mb-1"
             onClick={() => { copyQuote(quoteObject.quote) }}
           >
-            <FontAwesomeIcon className='mx-2' icon={faClipboard} />
+
             <span>Copy</span>
           </button>
           <p>{quoteObject.quote}</p>
