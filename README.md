@@ -25,7 +25,7 @@ A user may access the app via the accessable URL browser hence, a contibutor may
 
 #### Lawrence
 
-#### Nicholas
+#### Christopher
 
 #### Angel
 
@@ -37,6 +37,7 @@ To create this app we have used:
 
 - the 'Quotable' API by Luke Peavey
   https://github.com/lukePeavey/quotable.git
+
 - Google fonts for the fonts:
 
 https://fonts.google.com/
