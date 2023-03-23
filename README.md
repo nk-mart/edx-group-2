@@ -1,46 +1,51 @@
 # Quote Collector
 
-## Description and Objective
+## Description
 
-As a group, we are to utilised our learnt skills throughout the course to work together as a group and build a performant and scalable front-end single-page application that would fufill a real-world need. We will discuss and set out variety of issues which needed to be met in the project by utilising the project planning and project management tools on GitHub, this would enabled us to resolve merge conflicts and execute Git branching workflow collaboratively. The project will provide us with an opportunity to demonstrate our problem solving skills
-As a group, we will be collecting "quotes" API data which will be saved in a local storage. We will create a code function that would allow the data to be use in developing a from-end application,
-The functionality of our app will fufill the react lifecycle methods, an application navigating method which allows both "GET" and "POST" routes for retrieving and collecting data.
+This application was created to be similar to pinterest but for the quote lovers! The aim is to build a performant and scalable front-end single-page application that will fufill this desire. The user will be able to browse a variety of wise quotes to be inspired by and store away their favourite for the perfect occasion. They will then be able to easily find and copy them, ready to post wherever they wish. We intend for it especially to be utilised for things like twitter statuses. 
+
+We have utilised project planning and project management tools on GitHub, which enabled us to resolve merge conflicts and execute Git branching workflow collaboratively. The project provided us with an opportunity to demonstrate our problem solving skills
+As a group, we will be collecting "quotes" from an API, which are saved in the user's local storage. 
 
 ## Installation
-
-We are to make the use of at least 2 liberaries,packages or technologies, including a front end UI technology for the project.
-The project will utilise the use of node.js and react-app routine to help the project workflow, this will also enables the use of other technologies needed for the project.
-The designed and built application will be deployed to Netlify
-The Web application will be accessable via URL browser as needed.
-
-## User Story
-
-A user who is passionate about "quotes" will have the opportunity to navigate through our accessable URL link for quotes and able to browse variety of quotes, save their favourites quotes and then able to collect them after via the collection page.
+There is no need to install this app, as it is a web application fully accessible from your browser link. A contibutor may access the app with approved permision by via VS code using the command npm run start which will open up the Quote Home page in a browser
 
 ## Usage
+Upon reaching the page the user will be able to click the next button to navigate through various meaningful quotes. 
+They will have the option to select the 'Save' button on any of the quotes that they wish to store away for later use. 
+To reach their quote collection the user will be able to navigate to their 'Collection Page' via the button on the navbar. 
+Once they have reached their own personal collection page, they will have the option to scroll throught their favourite quotes, and copy to clipboard if they so wish. The user will then be able to post the quotes as they need wherever they like, for example as a twitter status. 
 
-A user may access the app via the accessable URL browser hence, a contibutor may access the app with approved permision by via VS code using the command npm run start which will open up the Quote Home page in a browser
+The link to the deployed application is as follows: 
+https://luxury-brigadeiros-a7c44d.netlify.app/
+
+An image of the fully deployed working appication is below: 
+![Screenshot 2023-03-23 at 22 27 17](https://user-images.githubusercontent.com/117308737/227381055-b4fb8358-6cde-4c05-8dd4-b0aa883e0309.png)
+
 
 ## Credits
 
-#### Lawrence
+#### Lawrence Stopwar
 
-#### Christopher
+#### Nicholas Martin
 
-#### Angel
+#### Angel Purschel
 
-#### Leona
+#### Leona Prabakar
 
 To create this app we have used:
 
-#### creat-react-app, Node.js, react-router-dom, Tailwind CSS, QuoteAPI,npmjs package randomcolor, Netlifly
-
-- the 'Quotable' API by Luke Peavey
-  https://github.com/lukePeavey/quotable.git
-
-- Google fonts for the fonts:
-
-https://fonts.google.com/
+- Creat-react-app, 
+- Node.js, 
+- React-router-dom, 
+- Tailwind CSS, 
+- Npmjs package randomcolor, 
+- Use-fit-text
+- React-toastify
+- Netlifly
+- The 'Quotable' API by Luke Peavey
+- Google fonts 
+- Font Awesome
 
 ## License
 
