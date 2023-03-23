@@ -5,6 +5,7 @@ import QuoteAPI from "./QuoteAPI";
 import {Link} from 'react-router-dom';
 import Button from "./Button.js";
 import randomColor from 'randomcolor';
+import Footer from './Footer/Footer';
 
 
 
@@ -65,7 +66,7 @@ function Home() {
         </div>
 
         <div onClick={fetchQuote}><i className="nextBtn fa fa-chevron-right" aria-hidden="true"></i></div>
-
+        <Footer />
     </div>
   );
 }
