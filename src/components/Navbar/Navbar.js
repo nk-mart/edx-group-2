@@ -19,7 +19,7 @@ function Navbar (props) {
             
             <ul className="flex flex-row justify-center ">
                 <li className="p-4 hover:text-white">
-                <Link to="/">Collection</Link>
+                <Link to="/">Home</Link>
                 </li>
                 <li className="p-4 hover:text-white">
                 <Link to="/collectionpage">Collection</Link>
