@@ -14,12 +14,12 @@ function Navbar (props) {
         alert("Copied the text: " + copiedText);
       }
     return (
-        <nav className="bg-gray-800 felx items-center">
+        <nav className="bg-gray-800 justify-center">
             
-            <div clasName="items-center">
-                <button>Collection</button>
-                <button>Home</button>
-            </div>
+            <ul className="flex flex-row justify-center ">
+                <li className="p-4 hover:text-white">Home</li>
+                <li className="p-4 hover:text -white">Collection</li>
+            </ul>
             
                
             
