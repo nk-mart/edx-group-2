@@ -106,15 +106,7 @@
 }
 
 
-.topRightButtons{
-    position: absolute;
-    top: 20%;
-    right: 2%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index:2;
-}
+
 .saveIcon, .collectionIcon{
   background-color: var(--color4);
   height: 50px;

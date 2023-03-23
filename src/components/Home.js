@@ -5,8 +5,8 @@ import QuoteAPI from "./QuoteAPI";
 import {Link} from 'react-router-dom';
 import Button from "./Button.js";
 import randomColor from 'randomcolor';
+import Navbar from './Navbar/Navbar.js';
 import Footer from './Footer/Footer';
-
 
 
 
@@ -48,6 +48,27 @@ function Home() {
       <div className="App">
 
         <Header></Header>
+
+        <Navbar MenuItems={
+        [
+          {
+            title: "Quote >",
+            url: "#",
+            action: fetchQuote
+          },
+          {
+            title: "Save",
+            url: "#",
+            action: storeQuote
+          },
+          {
+            title: "Collection",
+            url: "/collectionpage",
+            action: () => {}
+          }
+        ]
+      }/>
+
         
         <i class="fa1 fa fa-quote-left" aria-hidden="true"></i>
 
@@ -61,8 +82,8 @@ function Home() {
 
 
         <div className="topRightButtons">
-          <Button functionToDo={storeQuote} content="Save" style=""/>
-          <Link to="/collectionpage" className="collectionIcon">collection</Link>
+          <Button functionToDo={storeQuote} content="" style=""/>
+          <Link to="/collectionpage" className="collectionIcon"></Link>
         </div>
 
         <div onClick={fetchQuote}><i className="nextBtn fa fa-chevron-right" aria-hidden="true"></i></div>
