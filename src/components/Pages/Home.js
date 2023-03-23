@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import '../App.css';
+import '../../App.css';
 import Header from '../Header.js';
 import QuoteAPI from '../QuoteAPI/QuoteAPI.js';
 import Button from "../Button/Button.js";
