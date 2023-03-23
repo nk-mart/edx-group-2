@@ -1,7 +1,11 @@
-function Button(props){
-    console.log(props)
-const {functionToDo, content, style}= props
-    return (<button onClick={()=> functionToDo()}> {content}</button>)
-}
 
-export default Button
+function Button(props) {
+    const { functionToDo, content, className } = props;
+    return (
+      <button className={className} onClick={() => functionToDo()}>
+        {content}
+      </button>
+    );
+  }
+  
+  export default Button;

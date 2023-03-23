@@ -1,0 +1,34 @@
+.saveButton{
+    background-color:var(--color3);
+    box-shadow: 4px 4px 8px #000005;
+    border-radius: 20px;
+    padding: 5px;
+    width: 120px;
+    position: relative;
+    bottom: -70vh;
+    right: -38vw;
+    z-index: 100;
+}
+@media screen and (min-width:540px){
+    .saveButton{
+        bottom: -60vh;
+        right: -50vw;
+    }
+}
+.copyButton{
+    background-color:var(--color3);
+    box-shadow: 1px 2px 4px  #000005;
+    border-radius: 20px;
+    padding: 2px;
+    margin-right: 5px;
+    width: 45px;
+    height: 15px;
+    position: relative;
+    display:block;
+    right:-75%;
+    bottom:-2%;
+    font-size: 10px;
+    justify-content:center;
+    align-items: center;
+    display:flex;
+}
