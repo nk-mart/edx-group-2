@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './CollectionPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 function CollectionPage(){
 
@@ -39,6 +40,7 @@ function CollectionPage(){
             {savedQuotes.map((quote) => generatingQuote(quote))}
           </div>
       </div>
+        <Footer></Footer>
       </>
      );
     }
