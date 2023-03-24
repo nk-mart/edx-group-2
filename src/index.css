@@ -1,23 +1,21 @@
-:root{
+:root {
   --color1: #547980;
-  --color2: #594F4F;
-  --color3: #45ADA8;
-  --color4: #9DE0AD;
-  --color5: #E5FCC2;
-
+  --color2: #594f4f;
+  --color3: #45ada8;
+  --color4: #9de0ad;
+  --color5: #e5fcc2;
 }
 
 body {
   margin: 0;
-font-family: 'Shantell Sans', cursive;
-
+  font-family: "Shantell Sans", cursive;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #547980;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-

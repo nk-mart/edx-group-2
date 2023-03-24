@@ -2,111 +2,108 @@
   --box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    
-      --color1: #547980;
-      --color2: #594F4F;
-      --color3: #45ADA8;
-      --color4: #9DE0AD;
-      --color5: #E5FCC2;
-    
-  
+
+  --color1: #547980;
+  --color2: #594f4f;
+  --color3: #45ada8;
+  --color4: #9de0ad;
+  --color5: #e5fcc2;
 }
-.header{
-  overflow:hidden;
+.header {
+  overflow: hidden;
   color: rgba(0, 0, 0, 0.444);
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-weight: 900;
   background-color: var(--color3);
   box-shadow: var(--box-shadow);
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
   font-size: 50px;
   text-align: center;
-
-
 }
 
-.Navbar{
+.Navbar {
   color: var(--color3);
   font-weight: 600;
   font-size: 20px;
 }
 
 .quotePic {
-  position:absolute;
+  position: absolute;
   height: 80vh;
-  width:100%;
+  width: 100%;
   border-radius: 250px;
   overflow: hidden;
   margin-top: 15px;
   box-shadow: var(--box-shadow);
   background-size: cover;
-  background-image: url('/public/2.jpeg');
+  background-image: url("/public/2.jpeg");
   background-repeat: no-repeat;
-  z-index: 1; 
+  z-index: 1;
 }
-.colourOverlay{
-  position:absolute;
+.colourOverlay {
+  position: absolute;
   height: 80vh;
-  width:100%;
+  width: 100%;
   border-radius: 250px;
   overflow: hidden;
-  z-index: 2; 
-  opacity: 0.5; 
+  z-index: 2;
+  opacity: 0.5;
 }
-.quoteText{
-  position:absolute;
+.quoteText {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  z-index:5;
+  z-index: 5;
   font-size: 30px;
   font-weight: 900;
   font-family: simonetta;
   padding-left: 22%;
-  padding-right:18%;
+  padding-right: 18%;
   color: black;
   transform: rotate(-1deg);
 }
 
-.fa1, .fa2 {
-  position:absolute;
+.fa1,
+.fa2 {
+  position: absolute;
   color: black;
   font-size: 80px;
   z-index: 6;
 }
 
 .fa1 {
-  left: 3vw;
-  top: 20vh;
+  left: 8%;
+  top: 25%;
   transform: rotate(5deg);
 }
 
 .fa2 {
-  bottom: 12vh;
+  bottom: 12%;
   right: 7vw;
   transform: rotate(5deg);
 }
-
-
-
-.saveIcon, .collectionIcon{
-  background-color: var(--color4);
-  height: 50px;
-  width: 50px;
-  border-radius: 100px;
-  margin-left: 30px;
-  box-shadow: var(--box-shadow)
+@media screen and (max-width: 557px) {
+  .fa2 {
+    bottom: -7vh;
+  }
+  .fa1 {
+    top: 30vh;
+  }
+  .nextBtn {
+    top: 65%;
+  }
 }
 
-
-.nextBtn{
-  position:absolute;
-  top: 55vh;
-  right: 3vw;
+.nextBtn {
+  position: absolute;
+  font-size: 8000px;
+  left: 87%;
+  top: 55%;
+  width: 1000vw;
   color: black;
-  padding:0px;
-  font-size: 100px; 
+  padding: 0px;
+  font-size: 100px;
   z-index: 20000000;
 }
-
