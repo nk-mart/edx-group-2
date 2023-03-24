@@ -11,9 +11,14 @@
     z-index: 200;
 }
 .homeFooter{
-    bottom:-10vh;
+    bottom:-20vh;
     position:absolute;
     width:100vw;
+}
+@media screen and(max-width:565){
+    .homeFooter{
+        bottom: -30vh;
+    }
 }
 .collectionFooter{
 
